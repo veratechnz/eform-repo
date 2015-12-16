@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- MAKE EFORMS IPHONE-IPAD WEB APP CAPABLE -->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <!-- MAKE EFORMS IPHONE-IPAD WEB APP CAPABLE ENDS! -->
+        <link rel="icon" href="../../favicon.ico">
+        <title>REINZ E-Forms</title>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- BEGIN GLOBAL MANDATORY STYLES -->
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+
+        <link href="assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        
+        <!-- END GLOBAL MANDATORY STYLES -->
+        <!-- BEGIN PAGE LEVEL STYLES -->
+        <link href="assets/global/plugins/select2/select2.css" rel="stylesheet" type="text/css" />
+        <link href="assets/admin/pages/css/login-soft.css" rel="stylesheet" type="text/css" />
+        <!-- END PAGE LEVEL SCRIPTS -->
+        <!-- BEGIN THEME STYLES -->
+        <link href="assets/global/css/components.css" rel="stylesheet" type="text/css" />
+        <link href="assets/global/css/plugins.css" rel="stylesheet" type="text/css" />
+        <link href="assets/admin/layout/css/custom.css" rel="stylesheet" type="text/css" />
+        <!-- END THEME STYLES -->
+        <!-- END THEME STYLES -->
+        <link rel="shortcut icon" href="favicon.ico" />
+    </head>
+    <body>
+        <!-- PAGE CONTENT BEGINS -->
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <br />
+            </div>
+            <div class="row eformContent" style="margin-top: 40px;">
+                <div class="col-md-7">
+                    
+                    <h3 class="login-title text-center">REINZ eForm Portal</h3>
+                </div>
+                <!-- BEGIN LOGIN FORM -->
+                <div class="col-xs-5 ">
+                    <div class="login">
+                        <div class="content">
+                            <form class=" form-vertical login-form" action="" method="post" id="loginForm">
+                                <input name="__RequestVerificationToken" type="hidden" value="fgKnspLTtFKPKWNXza5fxx6FANp-ceTpvjFMPNylT4nCLpvCzxPU1wVE2NQiJerHSuJbFocV6Sp_tvjGSsUfD0jGKx5D8gCDNgZsQeXYs-81" />
+                                <h3 class="form-title">Login to your eForm Account</h3>
+                                <div class="form-group">
+                                    <!--ie8, ie9 does not support html5 placeholder, so we just show field title for that--> <label class="control-label visible-ie8 visible-ie9">REINZ User ID</label>
+                                    <div class="input-icon">
+                                        <i class="fa fa-user"></i> <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="UserName" name="UserName" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label visible-ie8 visible-ie9">Password</label>
+                                    <div class="input-icon">
+                                        <i class="fa fa-lock"></i> <input class="form-control placeholder-no-fix" type="password" autocomplete="off" placeholder="Password" name="Password" />
+                                    </div>
+                                </div>
+                                <div class="form-actions">
+                                    
+                                    <button type="submit" class="btn btn-primary pull-left"> LOGIN </button>
+                                    <div class="forget-password">
+                                        <h4>Forgot your password ?</h4>
+                                        
+                                        <p>no worries, click <a href="javascript:;" id="forget-password"> here </a> to reset your password.</p>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                            <form class="forget-form" action="index.html" method="post">
+                                <h3>Forgot Your Password ?</h3>
+                                <p>No worries, it is the same as your master REINZ password. Click the below link to be redirected to the REINZ home page</p>
+                                <a href="https://www.reinz.co.nz/reinz/" class="linkToHome">
+                                    The Real Estate Institute of New Zealand
+                                </a>
+                                <div class="form-actions">
+                                    <button type="button" id="back-btn" class="btn">
+                                    <i class="m-icon-swapleft"></i> Back
+                                    </button>
+                                </div>
+                            </form>
+                            <!-- END
+                            FORM -->
+                            <!-- BEGIN FORGOT PASSWORD FORM -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                </div>
+            </div>
+        </div>
+        <!-- PAGE CONTENT ENDS -->
+        <script src="assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/jquery-migrate.min.js" type="text/javascript"></script>
+        <!-- IMPORTANT! Load jquery-ui-1.10.3.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+        <script src="assets/global/plugins/jquery-ui/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN PAGE LEVEL PLUGINS -->
+        <script src="assets/global/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
+        <script src="assets/global/plugins/backstretch/jquery.backstretch.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/assets/global/plugins/select2/select2.min.js"></script>
+        <!-- END PAGE LEVEL PLUGINS -->
+        <!-- BEGIN PAGE LEVEL SCRIPTS -->
+        <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
+        <script src="assets/admin/layout/scripts/layout.js" type="text/javascript"></script>
+        <script src="assets/admin/pages/scripts/login-soft.js" type="text/javascript"></script>
+        <script>
+        jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core componets
+        Layout.init(); // init layout
+        });
+        </script>  
+        <script>
+            jQuery(document).ready(function () {
+                Metronic.init(); // init metronic core components
+                Layout.init(); // init current layout
+                Login.init();
+
+                // init background slide images
+                $.backstretch([
+                    "/assets/global/img/background/homes.jpg"
+                ], {
+                    //fade: 1000,
+                    //duration: 3000
+                }
+
+                );
+            });
+        </script>
+    </body>
+</html>
