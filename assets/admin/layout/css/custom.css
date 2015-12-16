@@ -1,0 +1,163 @@
+/* here you can put your own css to customize and override the theme */
+
+/***
+Rounded Portlets
+***/
+/*
+.portlet {
+	border-radius: 4px !important;
+}
+
+.portlet .portlet-title {
+	border-radius: 4px 4px 0px 0px !important;
+}
+
+.portlet .portlet-body,
+.portlet .portlet-body .form-actions  {
+	border-radius: 0px 0px 4px 4px !important;
+}
+*/
+
+
+/* Navbar Over-ride Color */
+.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
+display: block;
+text-align: center;
+margin-top: 5px;
+color: #ffffff;
+}
+
+/* Change the Button default to red from blue */
+.btn-default {
+color: #d84a38;
+background-color: #fff;
+border-color: #d84a38;
+}
+.btn-default > i {
+color: #d84a38;
+}
+
+/* Over-ride the right and left arrows */
+.chats li.in .message {
+text-align: left;
+border-left: 2px solid #555555;
+margin-left: 65px;
+background: #fafafa;
+}
+.chats li.in .message .arrow {
+display: block;
+position: absolute;
+top: 5px;
+left: -8px;
+width: 0;
+height: 0;
+border-top: 8px solid transparent;
+border-bottom: 8px solid transparent;
+border-right: 8px solid #555555;
+}
+
+/* Pagination Change Color */
+.pagination > li > a, .pagination>li>span {
+border: 1px solid #d84a38;
+color: #555555;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus,
+ .pagination > li > a.active {
+  color: #fff;
+  background-color: #d84a38;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #fff;
+  cursor: default;
+  background-color: #d84a38;
+  border-color: #337ab7;
+}
+
+/* Change the Pill buttons on the portlets to red from blue */
+.nav-pills > li {
+  float: left;
+}
+.nav-pills > li > a {
+  border-radius: 4px;
+  border: 1px solid #555555;
+  color: #555555;
+}
+.nav-pills > li + li {
+  margin-left: 2px;
+}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: #fff;
+  background-color: #d84a38;
+  border: 1px solid #d84a38;
+ }
+
+/* Change the Hyperlink to red from blue */
+a {
+text-shadow: none;
+color: #0D497C;
+text-decoration: underline;
+}
+
+
+/* Change the Chats to red from blue and increase size */
+.chats li .name {
+color: #d84a38;
+font-size: 14px;
+font-weight: 400;
+}
+
+/* Change the Portlet button font in title from grey to red */
+.portlet.light > .portlet-title > .actions .btn-default {
+  color: #d84a38;
+}
+
+/* Kelman's Over-ride Hack */
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.page-logo {
+    background-color: #2d2829 !important;
+}
+
+.logo {
+    left: 50%;
+    margin-left: -100px;
+    margin-top: 110px;
+    position: fixed;
+    top: 50%;
+}
+
+.loading {
+    padding:20px;
+}
+
+.error {
+    color:red;
+    border-color:red;
+}
+.help-block {
+     color:green;
+}
+
+.displayInfo {
+   text-align:left !important;
+}
+
+.eformLogin {
+    background-color:#fff;
+    padding:25px;
+}

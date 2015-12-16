@@ -1,0 +1,512 @@
+﻿
+/*Bootstrap Modals*/
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none; /* This makes sure that we can still click outside of the modal to close it */
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events: all;
+    z-index: 99999;
+}
+
+div.modal-content div.modal-header{
+    background-color: #fff;
+    color: #333;
+    border-radius: 4px;
+}
+
+.panel-primary > .panel-heading {
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.panel-primary, .panel-heading h3.panel-title {
+    border-color:#ddd;
+    color: #333;
+}
+
+.panel-heading h3.panel-title{
+    font-weight: 600;
+}
+
+.panel-primary div.panel-body{
+    font-weight: normal;
+}
+
+.modal-header h4.modal-title.text-center{
+    font-weight: 600;
+}
+
+.creator-name{
+    font-size: 14px;
+    font-weight: 300;
+    margin-left: 15px; 
+}
+
+.modal .modal-header {
+    border-bottom: 4px solid #efefef;
+}
+
+/*Scrollable Edit Section*/
+.edit-panel.panel-body{
+      max-height:200px;  
+      overflow: scroll;
+}
+
+/*New Individual Clause button*/
+
+.indi-new, .trans-add, contacts-add{
+    height: 25px;
+    margin-bottom: 14px;
+}
+
+.slide-icon-indi-sv-top, .slide-icon-add-trans, .slide-icon-add-contact, .slide-icon-assign-contact{
+    padding: 6px;
+    float: right;
+    margin: 0px 22px 6px 0px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    background-color: #0D497C;
+    border-color: #0D497C
+}
+
+.slide-icon-indi-sv-top:hover, .slide-icon-add-trans:hover, .slide-icon-add-contact:hover, .slide-icon-assign-contact:hover, .slide-icon-save-contact:hover{
+    background-color: #0D497C;
+    color:#fff;
+    border-color: #0D497C;
+}
+
+ .slide-icon-indi-sv-top.btn.btn-default:hover {
+       background-color: #0D497C;
+       color: #fff;
+    }
+
+.slide-icon-indi-sv-top i {
+    color: #fff;
+    padding: 0px 5px 0px 0px;
+}
+
+.slide-icon-indi-sv-top  {
+    margin-right:26px;
+}
+
+.bs-callout.bs-callout-danger p{
+    color: #333;
+}
+
+ol{
+    padding: 0px 6px 0px 0px;
+    color: #333;
+    font-weight: 600;
+}
+
+.bs-callout.bs-callout-danger li{
+    margin-left: 5px;
+    padding-left: 5px;
+}
+
+/*Admin Address Button*/
+.slide-icon-add-trans i.fa.fa-plus{
+    color: #fff;
+    padding-right: 6px;
+}
+
+#modal-add-trans .form-control{
+    margin-top: 8px;
+}
+
+ div.admin-panel .bs-callout-danger{
+     padding: 14px;
+ }
+
+.who-trans {
+    color: #333;
+    display: inline;
+    padding-right: 8px;
+    font-weight: 600;
+
+} 
+ 
+.when-trans{
+    color: #333;
+    display: inline;
+    padding-left: 8px;
+    font-weight: 600;
+    color: #0D497C;
+}
+
+.admin-panel .bs-callout-danger li p{
+    margin-top: 6px;
+    font-weight: 300;
+}
+
+.autosaver{
+    margin-right: 6px;
+    color: #333;
+
+}
+
+.restore-saver{
+    display: inline;
+    width: 100px;
+}
+
+.admin-version-tab h5{
+    font-weight: 600;
+    color: #333;
+    display: inline;
+}
+
+.admin-version-tab .btn-default{
+    font-size: 13px;
+}
+
+.modal-footer .btn-default{
+    float: right;
+    margin: 12px;
+}
+
+.bs-callout.bs-callout-danger h5.when-trans{
+    color: #0D497C;
+}
+
+.restore-autosave {
+    width: 96%;
+    margin: 0 auto; 
+    clearfix: none;
+    overflow: auto; 
+}
+
+.auto-saver{
+    float: left;
+    margin-left: 20px;
+    border: none;
+    margin-top: 6px;
+
+}
+
+.restore-saver{
+    float: right;
+    margin-right: 20px;
+    margin-top: 14px;
+}
+
+.restore-autosave i{
+    color: #0D497C
+}
+
+.date-autosave{
+    font-weight: 600;
+    color: #333;
+}
+
+.time-autosave{
+    color: #0D497C;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.restore-saver {
+    background-color: #0D497C;
+    color: #fff;
+}
+
+.restore-saver h5, .restore-saver i {
+    color: #fff;
+}
+
+.auto-saver:hover{
+    background-color: #fff;
+}
+
+.restore-saver:hover, .restore-saver i:hover, .restore-saver h5:hover .restore-saver:active{
+    background-color: #0D497C;
+    color: #fff;
+}
+
+.audit-save.btn.btn-default{
+    padding: 3px 9px;
+    margin-left: 6px;
+}
+
+.audit-save.btn.btn-default i{
+    color: #333;
+}
+
+.version-autosave{
+    color: #333;
+    display: inline;
+    padding-right: 8px;
+    font-weight: 600;
+
+} 
+
+.dt-autosave, .bs-callout.bs-callout-danger h5.dt-autosave{
+    color: #333;
+    display: inline;
+    font-weight: 600;
+    color: #0D497C;
+    font-style: italic;
+    margin: 0px 9px;
+}
+
+.audit-save.btn.btn-default{
+    margin-left: 10px;
+}
+
+.bs-callout.bs-callout-danger h5{
+    color: #333;
+    font-weight: 600;
+}
+
+.bs-callout.bs-callout-danger{
+    color: #333;
+    font-weight: 500;
+}
+
+#slider-contents{
+    overflow: scroll;
+}
+
+/*Contacts Panel*/
+
+.contacts-assign-tab h5{
+    color: #333;
+}
+
+.slide-icon-assign-contact i{
+    color: #fff;
+    margin-right: 6px;
+}
+
+
+.assign-msg {
+    width: 90%;
+    margin: 0 auto;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.search-results{
+    color: #a3a3a3;
+    font-style: italic;
+    list-style-type: none;
+}
+
+.contacts-search-panel{
+    height: 260px;
+
+}
+
+.assign-contact{
+    font-weight: 400;
+    color: #333;
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 25px;
+    margin-top: 32px;
+}
+
+.slide-icon-add-contact{
+    margin-top: 22px;
+}
+
+.slide-icon-add-contact i{
+    color: #fff;
+    padding: 4px;
+}
+
+.contacts-search-panel.panel-body ul{
+    padding-left: 0px;
+}
+
+/*Back To Top Button*/
+.backTotop{
+	background-color: #fff;
+	bottom: 16px;
+	display: none;
+	opacity:0.6;
+	padding: 12px;
+	position: fixed;
+	right: 80px;
+	text-decoration: none;
+    font-size: 24px;
+    border-radius: 50px;
+}
+.backTotop:hover{
+	opacity:1;
+	transition:1s;
+}
+
+.backTotop i.fa.fa-angle-up{
+    font-size: 42px;
+    color: #333;
+}
+
+/***************************** Media Queries ****************************************/
+
+.nav-column div.page-sidebar ul#main-left-nav.page-sidebar-menu i{font-size: 14px; padding-right: 4px;}
+
+/* Clauses jq Sortable drag and Drop dotted lines. */
+
+.placeholder {
+    border: 1px dashed #9f9a96;
+    height: 20vh;
+    width: 32vw;
+    border-radius: 2px;
+    margin-bottom: 3%;
+}
+
+/*Warning-Panel*/
+#tab_1_1_1 .panel.panel-default{
+    margin: 30px 0 35px 0;
+    border: solid 1px#000;
+    max-width: 54em;
+}
+
+.warning-imp{
+    color: #000;
+    font-weight: bold;
+    margin-right: 4px;
+}
+.warning-note  i {
+    color: #000;
+    margin-right: 4px;
+    font-size: 12px !important;
+}
+
+.strikerThrough{
+    text-decoration:line-through;
+}
+
+
+/*Create Forms Page*/
+.select-form img{
+    display: block;
+    margin: 0 auto;
+    width: 78%;
+    height: 78%;
+}
+
+.select-form .col-xs-4 {
+    margin-bottom: 30px;
+}
+
+.select-form h5, .select-template h5, .my-forms h5 {
+    border-bottom: 1px #dbd5d5 solid;
+    padding: 0 0 1.1em 0;
+    color: #0D497C;
+    margin:20px 0 25px 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.doc-border h5 {
+    min-height: 4.2em;
+    font-size: 17;
+    font-weight: bold;
+    color: #333;
+
+}
+
+.select-form p{
+    text-transform: uppercase;
+}
+
+.doc-border{
+    width: 99%;
+    margin: 0 auto;
+    border: 3px #dbd5d5 solid;
+    border-radius: 2px;
+    padding: 1em;
+    border-radius: 3px;
+    min-height: 20em;
+
+}
+
+.select-template  p{
+    min-height: 34px;
+}
+
+.select-template .col-xs-4 {
+    margin-bottom: 30px;
+}
+
+.my-forms  p{
+    min-height: 34px;
+}
+
+.my-forms .col-xs-4 {
+    margin-bottom: 30px;
+}
+
+ /*Create Form Page Panel Style*/
+.panel-default{
+    border-color: #F0F0F0;
+}
+
+.select-template .list-group{
+    margin-top: 25px;
+}
+
+.create-q {
+    margin-right: 20px;
+}
+
+.select-template .btn-sm, .my-forms .btn-sm{
+    margin:  0 10px 0 10px; 
+    line-height: 2.4em;
+    float: right;
+    margin-bottom: 6px;
+}
+
+.select-template .form-search {
+    width: 9.5em;
+    height: 2.1em;
+    margin: 0.4em 0.8em 0 0;
+    padding-left: .3em;
+}
+
+.select-template .list-group-item{
+    overflow: auto;
+}
+
+.select-form .col-xs-8:first-child {
+    padding-left: 20px;
+}
+
+.form-reference{
+    display: inline;
+    color: #333333;
+    direction: ltr;
+    font-family: "Open Sans",sans-serif;
+    font-size: 15px;
+    padding-right: 25px;
+    float: right;
+    font-weight: bold;
+}
+
+.my-forms .list-group-item{
+    height: 4.8em;
+}
+
+ul.ui-autocomplete.ui-menu {
+  z-index: 9999999;
+}
