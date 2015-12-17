@@ -37,3 +37,19 @@ ul.search-forms{
 .greyed-out{
 	color: #666666;
 }
+
+.form-sect-title span.address-searcher a i#addressSearcher.fa.fa-search {
+	color: $blue-b;
+	display: inline-block;
+	font-size: 12px;
+	margin-left: 32px;
+	vertical-align: middle;
+}
+
+.address-searcher a{
+	color: $blue-b;
+}
+
+.address-searcher a:hover{
+	color: $blue-b;
+}

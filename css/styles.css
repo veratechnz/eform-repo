@@ -1446,6 +1446,19 @@ ul.search-forms {
 .greyed-out {
   color: #666666; }
 
+.form-sect-title span.address-searcher a i#addressSearcher.fa.fa-search {
+  color: #0D497C;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 32px;
+  vertical-align: middle; }
+
+.address-searcher a {
+  color: #0D497C; }
+
+.address-searcher a:hover {
+  color: #0D497C; }
+
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
   color: #8EC6CE; }
