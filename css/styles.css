@@ -947,7 +947,6 @@ html.username.username-hide-on-mobile {
   margin-bottom: 20px; }
 
 .bs-callout h4 {
-  margin-top: 0;
   margin-bottom: 5px;
   font-size: 14px; }
 
@@ -1021,7 +1020,7 @@ html.username.username-hide-on-mobile {
 div.modal-content div.modal-header {
   background-color: #fff;
   color: #333;
-  border-radius: 4px; }
+  border-radius: 0px; }
 
 .panel-primary > .panel-heading {
   background-color: #fff;
@@ -1458,6 +1457,11 @@ ul.search-forms {
 
 .address-searcher a:hover {
   color: #0D497C; }
+
+.address-fail {
+  padding: 8px;
+  margin: 25px;
+  background-color: #8EC6CE; }
 
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
