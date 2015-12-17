@@ -160,7 +160,7 @@
                 </a>
 
 
-                <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Copy">
+                <a href="#" class="btn btn-primary" data-toggle="tooltip" data-placement="bottom" title="Clone">
                     <i href="#" class="fa fa-copy greyed"></i>
                 </a>
 
@@ -200,18 +200,8 @@
                                 <i class="fa fa-book"></i> Translation Log
                             </a>
                         </li>
-                        <li>
-                            <a href="javascript:void(0);" onclick="printFormToPDF();">
-                                <i class="fa fa-print"></i> Print
-                            </a>
-                        </li>
                         <li class="divider">
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);" onclick="">
-                                <i class="fa fa-envelope-o"></i> Email
-                            </a>
-                        </li>
+                        </li>>
                         <li>
                             <a href="javascript:void(0);" onclick="">
                                 <i class="fa fa-google"></i> Google Drive
@@ -287,7 +277,7 @@
     <!-- BEGIN PAGE LEVEL SCRIPTS -->
     <!-- Testing Scripts -->
     <script src="assets/global/scripts/metronic.js" type="text/javascript"></script>
-    <script src="ssets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
+    <script src="assets/admin/layout4/scripts/layout.js" type="text/javascript"></script>
     <script src="assets/admin/layout4/scripts/bootstrap-dropdown-hover.js" type="text/javascript"></script>
     <script src="assets/admin/layout4/scripts/quick-sidebar.js" type="text/javascript"></script>
     <script src="assets/global/plugins/demo.js" type="text/javascript"></script>
@@ -295,13 +285,14 @@
     <script src="assets/admin/pages/scripts/jq-touch-punch-min.js" type="text/javascript"></script>
     <script src="assets/admin/pages/scripts/sidebar-ajax.js" type="text/javascript"></script>
     <script src="Scripts/eform/eformSearch.js" type="text/javascript"> </script>
-    <script src="assets/admin/pages/scripts/custom.js" type="text/javascript"> </script>
+    <script src="js/custom.js" type="text/javascript"> </script>
 
     <script>
         jQuery(document).ready(function () {
             Metronic.init(); // init metronic core componets
             Layout.init(); // init layout
             Demo.init(); // init demo features
+            customTrigger.init();
         });
     </script>
 </body>

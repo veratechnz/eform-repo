@@ -1,17 +1,38 @@
-//Custom JS For Front End Prototyping
-var localVars = {
+$(document).ready(function(){
+            
+            //Click event to grey out save button. 
+            $('#save-button').on('click', function(){
+                greyOutSave();
+            });
 
-}
+            //Setup Tooltips / Only turned on for desktop  -- Not Touch or mobile devices. 
+            if (!('ontouchstart' in window)) {
+                $('[data-toggle="tooltip"]').tooltip({ container: 'body' }); // <-- Example code from Bootstrap docs
+            }
 
-//Setup Tooltips / Only turned on for desktop  -- Not Touch or mobile devices. 
-if (!('ontouchstart' in window)) {
-    $('[data-toggle="tooltip"]').tooltip({ container: 'body' }); // <-- Example code from Bootstrap docs
-}
+});
+
+    //Custom JS For Front End Prototyping
+    var customTrigger = {
+
+        init: function(){
+            completeButtonSwitch();
+            modalViewClauses();
+            panelFrontEndDisplay();
+            formsCheckForFocus();
+            stickyDivFunction();
+            backToTopButton();
+            submitFormName();
+            saveCompleteNotification();
+        }
+
+    };
+
 
 
 
     // Complete Button Change Background Color To Red For Complete. Prototype Effect
-    var completeButtonSwitch = function () {
+    function completeButtonSwitch() {
         $('.complete, #completed').click(function () {
             ($(this).is('.complete')) ?
             $(this).hide('fast', function () {
@@ -21,12 +42,10 @@ if (!('ontouchstart' in window)) {
                 $('.complete').show();
             });
         });
-    }(); //End of completeButtonSwitch
-
-
+    } //End of completeButtonSwitch
 
     //Modal Triggers
-    var modalViewClauses = function () {
+    function modalViewClauses() {
 
         $('.slide-icon-reinz').click(function (e) {
             $('#modal-view-clause-reinz').modal('show');
@@ -62,11 +81,10 @@ if (!('ontouchstart' in window)) {
             console.log('save clicked');
             $('#modal-add-contact').modal('hide');
         });
-    }();
-
+    }
 
     //Toggle click for front end display
-    var panelFrontEndDisplay = function () {
+    function panelFrontEndDisplay() {
 
         //Toggle component
         jQuery.fn.clickToggle = function (a, b) {
@@ -93,21 +111,20 @@ if (!('ontouchstart' in window)) {
             $('#contacts-panel').hide();       
         });
 
-    }();
-
+    }
 
     //Strikes out 13.2.a option on agreement to lease form
-    var formsCheckForFocus = function () {;
+    function formsCheckForFocus() {
 
         $('#atl-option-two').click(function () {
             $('#nine-month').css({'text-decoration' : 'line-through', 'color' : 'grey'});                  
         });
 
-    }();
+    }
 
 
     //Creates sticky div for panel buttons at top of screen 
-    var stickyDivFunciton = function () {
+    function stickyDivFunction() {
 
             // Check the initial Poistion of the Sticky Header
             $(window).scroll(function () {
@@ -129,10 +146,10 @@ if (!('ontouchstart' in window)) {
 
             });
     
-    }();
+    }
 
     //Back to top button js
-    var backToTopButton = function () {
+    function backToTopButton() {
 
         var offset = 400, // At what pixels show Back to Top Button
         scrollDuration = 300; // Duration of scrolling to top
@@ -150,16 +167,18 @@ if (!('ontouchstart' in window)) {
             $('html, body').animate({
                 scrollTop: 0
             }, scrollDuration);
-        })
+        });
 
-    }();
+    }
 
     //Function For Form Name Submission. POC Only so link continues after Create is clicked. 
-    var submitFormName = function() {
+    function submitFormName() {
         $('#submitFormName').click(function () { 
             window.location = $('.form-name-modal-trigger').attr('href');
         });
-    }();
+    }
+
+
 
     //Function for Bing to provide prototype Autosave prompt message. 
     //  var savingTooltip = function() {
@@ -202,6 +221,15 @@ if (!('ontouchstart' in window)) {
         }
 
     }
+
+    //Greyout for save menu button
+    function greyOutSave(){
+        $('#save-button').tooltip('hide');
+        $('i.fa.fa-save').toggleClass('greyed-out').promise().done(function(){
+            $('#save-button').attr('data-original-title', 'Unavailable')
+        });
+    }
+
 
 
 
