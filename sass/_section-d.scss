@@ -1,0 +1,35 @@
+/*Section D*/
+ul.search-forms{
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.date-created{
+	color: $blue-b;
+	padding: 0px 2px 0px 2px;
+	font-weight: bold;
+}
+
+.form-title{
+	font-weight: bold;
+	padding-right: 4px;
+}
+
+.address-reference{
+	font-style: italic;
+	color: #333333;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-weight: normal;
+}
+
+.search-forms li{
+	margin: 10px 0 10px 0;
+}
+
+.go-to-form{
+	color: $blue-b;
+	font-weight: bold;
+	text-decoration: underline;
+	padding-left: 6px;
+}
