@@ -1,3 +1,4 @@
+//Custom JS For Front End Prototyping
 $(document).ready(function(){
             
             //Click event to grey out save button. 
@@ -12,7 +13,7 @@ $(document).ready(function(){
 
 });
 
-    //Custom JS For Front End Prototyping
+//Object that has method for all function invocations. 
     var customTrigger = {
 
         init: function(){
@@ -23,6 +24,7 @@ $(document).ready(function(){
             stickyDivFunction();
             backToTopButton();
             submitFormName();
+            removeClauseClicked();
         }
 
     };
@@ -226,6 +228,23 @@ $(document).ready(function(){
         $('#save-button').tooltip('hide');
         $('i.fa.fa-save').toggleClass('greyed-out').promise().done(function(){
             $('#save-button').attr('data-original-title', 'Unavailable')
+        });
+    }
+
+    //Removes clauses when 'x' checkmarks are clicked in top left corner
+    function removeClauseClicked(){
+        
+        $('#reinzClauses').on('click', function( event ){
+            //Capture clicked node via event.target
+            var $targetClause = $( event.target );
+            //Check if clicked node has remove class
+            if ($targetClause.hasClass('remove-clause')){
+                //Remove Tooltip and then ...
+                $($targetClause).tooltip().hide(function(){
+                    //...Remove actual list item form the DOM. 
+                    $($targetClause).closest('li').remove();
+                });
+            } //end of if conditional
         });
     }
 

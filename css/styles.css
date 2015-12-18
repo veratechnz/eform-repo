@@ -1463,6 +1463,12 @@ ul.search-forms {
   margin: 25px;
   background-color: #8EC6CE; }
 
+.remove-clause {
+  float: right; }
+
+.remove-clause:hover, .remove-clause:active, .remove-clause:visited {
+  color: #8EC6CE; }
+
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
   color: #8EC6CE; }
