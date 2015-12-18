@@ -231,9 +231,10 @@ $(document).ready(function(){
         });
     }
 
+
     //Removes clauses when 'x' checkmarks are clicked in top left corner
     function removeClauseClicked(){
-        
+
         $('#reinzClauses').on('click', function( event ){
             //Capture clicked node via event.target
             var $targetClause = $( event.target );

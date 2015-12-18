@@ -60,10 +60,12 @@ ul.search-forms{
 	background-color: $blue-a;
 }
 
-.remove-clause{
-	float: right;
+a .fa.fa-close.remove-clause:hover, a .fa.fa-close.remove-clause:active, a .fa.fa-close.remove-clause:visited {
+	color: $blue-a;
 }
 
-.remove-clause:hover, .remove-clause:active, .remove-clause:visited {
-	color: $blue-a;
+
+a .fa.fa-close.remove-clause {
+	color: #000;
+	float: right;
 }

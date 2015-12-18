@@ -1463,11 +1463,12 @@ ul.search-forms {
   margin: 25px;
   background-color: #8EC6CE; }
 
-.remove-clause {
-  float: right; }
-
-.remove-clause:hover, .remove-clause:active, .remove-clause:visited {
+a .fa.fa-close.remove-clause:hover, a .fa.fa-close.remove-clause:active, a .fa.fa-close.remove-clause:visited {
   color: #8EC6CE; }
+
+a .fa.fa-close.remove-clause {
+  color: #000;
+  float: right; }
 
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
