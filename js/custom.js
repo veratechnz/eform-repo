@@ -30,6 +30,7 @@ $(document).ready(function(){
     };
 
 
+// All Custom Functions****************************************************************************//
 
 
     // Complete Button Change Background Color To Red For Complete. Prototype Effect

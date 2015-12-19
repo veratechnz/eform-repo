@@ -1470,6 +1470,10 @@ a .fa.fa-close.remove-clause {
   color: #000;
   float: right; }
 
+/*Menu Weight Fix*/
+.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
+  font-weight: 600; }
+
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
   color: #8EC6CE; }
@@ -1489,6 +1493,35 @@ a .fa.fa-close.remove-clause {
 
 .assist-buttons button.btn.red-haze.btn-sm.dropdown-toggle i {
   margin-right: 6px; }
+
+/*Forms*/
+.settings-block div.row {
+  margin-bottom: 20px;
+  min-height: 48px; }
+
+.form-label {
+  background-color: #8EC6CE;
+  padding: 8px;
+  border-radius: 2px;
+  font-weight: 500;
+  margin-bottom: 32px; }
+
+.cbcontainer {
+  display: inline-block; }
+
+.settings-block .checkbox {
+  text-align: left; }
+
+.settings-block .checkbox input {
+  float: right;
+  position: relative !important;
+  margin: 5px 5px 5px 25px !important; }
+
+div.cbcontainer label {
+  min-width: 280px; }
+
+.cbcontainer label input {
+  margin-left: 40px; }
 
 /***************************** Media Queries ****************************************/
 /* Large desktops and laptops */

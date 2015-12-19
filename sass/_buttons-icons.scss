@@ -20,3 +20,40 @@
 
 .assist-buttons button.btn.red-haze.btn-sm.dropdown-toggle i {
   margin-right: 6px; }
+
+
+/*Forms*/
+.settings-block  div.row {
+  margin-bottom: 20px;
+  min-height: 48px;
+  }
+
+  .form-label{
+  background-color: $blue-a;
+  padding: 8px;
+  border-radius: 2px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+ .cbcontainer {
+  display: inline-block;
+}
+
+.settings-block .checkbox {
+  text-align: left;
+}
+
+.settings-block .checkbox input {
+  float: right;
+  position: relative !important;
+  margin: 5px 5px 5px 25px !important;
+} 
+
+ div.cbcontainer label {
+  min-width: 280px;
+ }
+
+.cbcontainer label input {
+  margin-left: 40px;
+}

@@ -69,3 +69,7 @@ a .fa.fa-close.remove-clause {
 	color: #000;
 	float: right;
 }
+
+
+/*Menu Weight Fix*/
+.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {font-weight: 600;}
