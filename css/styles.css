@@ -1523,6 +1523,13 @@ div.cbcontainer label {
 .cbcontainer label input {
   margin-left: 40px; }
 
+.settings-block .col-sm-3.col-md-offset-1.control-label {
+  text-align: left;
+  padding-left: 0px; }
+
+.form-group {
+  margin-bottom: 25px; }
+
 /***************************** Media Queries ****************************************/
 /* Large desktops and laptops */
 @media (min-width: 1309px) and (max-width: 1600px) {

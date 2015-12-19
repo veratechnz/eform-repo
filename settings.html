@@ -409,10 +409,45 @@
                                               <div class="col-xs-6">
                                                 <form role="form" class="form-horizontal">
                                                     <fieldset>
-                                                      <div class="form-group">
 
-                                                        <div class="row">
-                                                            <label class="col-sm-3 control-label">Autosave Frequency</label>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 col-md-offset-1 control-label">Autosave Frequency:</label>
+                                                            <div class="col-sm-4">
+                                                                <select class="form-control">
+                                                                    <option value="1">Disabled</option>
+                                                                    <option value="2">5 Minutes</option>
+                                                                    <option value="3">10 Minutes</option>
+                                                                    <option value="3">15 Minutes</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 col-md-offset-1  control-label">Set Timeout:</label>
+                                                            <div class="col-sm-4">
+                                                                <select class="form-control">
+                                                                    <option value="1">20 Minutes</option>
+                                                                    <option value="2">30 Minutes</option>
+                                                                    <option value="3">40 Minutes</option>
+                                                                    <option value="3">50 Minutes</option>
+                                                                    <option value="3">60 Minutes</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 col-md-offset-1  control-label">Default Manager:</label>
+                                                            <div class="col-sm-4">
+                                                                <select class="form-control">
+                                                                    <option value="1">DEFAULT MANAGER A</option>
+                                                                    <option value="2">DEFAULT MANAGER B</option>
+                                                                    <option value="3">DEFAULT MANAGER C</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 col-md-offset-1  control-label">Archive Frequency:</label>
                                                             <div class="col-sm-4">
                                                                 <select class="form-control">
                                                                     <option value="1">1</option>
@@ -422,41 +457,8 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="row">
-                                                            <label class="col-sm-3 control-label">Set Timeout</label>
-                                                            <div class="col-sm-4">
-                                                                <select class="form-control">
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <label class="col-sm-3 control-label">Default Manager</label>
-                                                            <div class="col-sm-4">
-                                                                <select class="form-control">
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <label class="col-sm-3 control-label">Archive Frequency</label>
-                                                            <div class="col-sm-4">
-                                                                <select class="form-control">
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
-                                                                </select>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="row">
-                                                            <label class="col-sm-3 control-label">Printed Font</label>
+                                                        <div class="form-group">
+                                                            <label class="col-sm-3 col-md-offset-1  control-label">Printed Font:</label>
                                                             <div class="col-sm-4">
                                                                 <select class="form-control">
                                                                     <option value="1">1</option>
@@ -466,88 +468,85 @@
                                                             </div>
                                                         </div>
                                                             
-                                                        <div class="checkbox col-md-offset-1">
-                                                          <div class="cbcontainer">
-                                                              <label for="checkboxa">
-                                                                <input type="checkbox" id="checkboxa" class="pull-right"> Make Printed Font Bold
-                                                              </label>
-                                                          </div>
-                                                        </div>
-
-                                                        <div class="checkbox col-md-offset-1">
-                                                            <div class="cbcontainer">
-                                                              <label>
-                                                                <input type="checkbox" class="pull-right"> Enable Save To Google Drive
-                                                              </label>
+                                                        <div class="form-group">
+                                                            <div class="checkbox cbcontainer col-xs-offset-1">
+                                                              <label><input type="checkbox" value="">Make Printed Font Bold:</label>
                                                             </div>
                                                         </div>
 
-                                                        <div class="checkbox col-md-offset-1">
-                                                          <div class="cbcontainer">
-                                                              <label>
-                                                                <input type="checkbox" class="pull-right"> Enable Save To Drop Box
-                                                              </label>
-                                                          </div>
+                                                        <div class="form-group">
+                                                            <div class="checkbox cbcontainer col-xs-offset-1">
+                                                              <label><input type="checkbox" value="">Enable Save To Google Drive:</label>
+                                                            </div>
                                                         </div>
+
+                                                        <div class="form-group">
+                                                            <div class="checkbox cbcontainer col-xs-offset-1">
+                                                              <label><input type="checkbox" value="">Enable Save To Dropbox:</label>
+                                                            </div>
+                                                        </div>
+
 
                                                       </div>
                                                  </div>
-                                                </div>
                                                 <!-- Form Group Ends -->
 
                                                 <!-- Settings Section -->
-                                                <h5>Company Settings</h5>
-                                                <div class="row">
+                                                <h5>Company Settings:</h5>
+                                                <div class="row form-horizontal">
                                                 <div class="col-xs-6">
-                                                    <div class="form-group">
-                                                      <label for="exampleInputEmail1">Company eForm Name:</label>
-                                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                                    </div>
-
-                                                    <div class="form-group col-xs-offset-1">
-                                                        <div class="checkbox cbcontainer">
-                                                          <label><input type="checkbox" value="">Option 1</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group col-xs-offset-1">
-                                                        <div class="checkbox cbcontainer">
-                                                          <label><input type="checkbox" value="">Option 1</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group col-xs-offset-1">
-                                                        <div class="checkbox cbcontainer">
-                                                          <label><input type="checkbox" value="">Option 1</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group col-xs-offset-1">
-                                                        <div class="checkbox cbcontainer">
-                                                          <label><input type="checkbox" value="">Option 1</label>
-                                                        </div>
-                                                    </div>
 
                                                     <div class="form-group">
-                                                      <label for="exampleInputEmail1">Company eForm Name:</label>
-                                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Default">
-                                                    </div>
-
-
-                                                      <div class="form-group cbcontainer col-xs-offset-1">
-                                                          <div class="checkbox">
-                                                            <label><input type="checkbox" value="">Option 1</label>
-                                                          </div>
+                                                      <label for="inputEmail3" class="col-sm-3 col-md-offset-1 control-label">Company eForm Name:</label>
+                                                      <div class="col-sm-4">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="">
                                                       </div>
+                                                    </div>
 
+                                                    <div class="form-group">
+                                                        <div class="checkbox cbcontainer col-xs-offset-1">
+                                                          <label><input type="checkbox" value="">Company Clauses Editable</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="checkbox cbcontainer col-xs-offset-1">
+                                                          <label><input type="checkbox" value="">Require Address</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="checkbox cbcontainer col-xs-offset-1">
+                                                          <label><input type="checkbox" value="">Disable REINZ Clauses</label>
+                                                        </div>
+                                                    </div>  
+
+                                                    <div class="form-group">
+                                                        <div class="checkbox cbcontainer col-xs-offset-1">
+                                                          <label><input type="checkbox" value="">Appendix Page Title</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                      <label for="inputEmail3" class="col-sm-3 col-md-offset-1 control-label">Appendix Page Title</label>
+                                                      <div class="col-sm-4">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="Default">
+                                                      </div>
+                                                    </div>
+
+                                                    <div class="form-group">
+                                                        <div class="checkbox cbcontainer col-xs-offset-1">
+                                                          <label><input type="checkbox" value="">Disable Distribution</label>
+                                                        </div>
+                                                    </div>
+                                                                                                        </div>
                                                         </div>
                                                       </div>
                                                     </fieldset>
                                                  </form>
                                                </div>
-                                            </div> 
-                                        </div>
-                                    </div> <!-- col-xs-12 ENDS -->
+                                          </div> 
+                                    </div>
                                 </div>
                             </div><!-- END portlet -->
                         </div><!-- END page-content -->
