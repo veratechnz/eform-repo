@@ -420,6 +420,9 @@
                                                                     <option value="3">15 Minutes</option>
                                                                 </select>
                                                             </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Select how often you want your forms to auto-save in minutes.">
+                                                                <i class="fa fa-question"></i>
+                                                            </div>
                                                         </div>
 
                                                         <div class="form-group">
@@ -433,16 +436,24 @@
                                                                     <option value="3">60 Minutes</option>
                                                                 </select>
                                                             </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Configure the site timeout. The higher the timeout setting, the longer a page can be idle before being logged out.
+                                                            ">
+                                                                <i class="fa fa-question"></i>
+                                                            </div>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <label class="col-sm-3 col-md-offset-1  control-label">Default Manager:</label>
                                                             <div class="col-sm-4">
                                                                 <select class="form-control">
-                                                                    <option value="1">DEFAULT MANAGER A</option>
-                                                                    <option value="2">DEFAULT MANAGER B</option>
-                                                                    <option value="3">DEFAULT MANAGER C</option>
+                                                                    <option value="1">Default Manager A</option>
+                                                                    <option value="2">Defualt Manager B</option>
+                                                                    <option value="3">Default Manager C</option>
                                                                 </select>
+                                                            </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Set which enabled company managers are set as manager on your draft and completed forms. 
+                                                            ">
+                                                                <i class="fa fa-question"></i>
                                                             </div>
                                                         </div>
 
@@ -450,10 +461,14 @@
                                                             <label class="col-sm-3 col-md-offset-1  control-label">Archive Frequency:</label>
                                                             <div class="col-sm-4">
                                                                 <select class="form-control">
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
+                                                                    <option value="1">1 Months</option>
+                                                                    <option value="1">3 Months</option>
+                                                                    <option value="2">6 Months</option>
+                                                                    <option value="3">12 Months</option>
                                                                 </select>
+                                                            </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Configure how long after creation your form will be archived. Once archived the form can only be retrieved as a PDF and not editable again. ">
+                                                                <i class="fa fa-question"></i>
                                                             </div>
                                                         </div>
 
@@ -461,10 +476,12 @@
                                                             <label class="col-sm-3 col-md-offset-1  control-label">Printed Font:</label>
                                                             <div class="col-sm-4">
                                                                 <select class="form-control">
-                                                                    <option value="1">1</option>
-                                                                    <option value="2">2</option>
-                                                                    <option value="3">3</option>
+                                                                    <option value="1">Times New Roman</option>
+                                                                    <option value="2">Arial</option>
                                                                 </select>
+                                                            </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Choose which font you want you content to use when populated on your forms. ">
+                                                                <i class="fa fa-question"></i>
                                                             </div>
                                                         </div>
                                                             
@@ -472,17 +489,26 @@
                                                             <div class="checkbox cbcontainer col-xs-offset-1">
                                                               <label><input type="checkbox" value="">Make Printed Font Bold:</label>
                                                             </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Set all your submitted content to bold on all your eForms. ">
+                                                                <i class="fa fa-question"></i>
+                                                            </div>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <div class="checkbox cbcontainer col-xs-offset-1">
                                                               <label><input type="checkbox" value="">Enable Save To Google Drive:</label>
                                                             </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Enable this to include the “Save to Google” link on the export menu when creating forms. ">
+                                                                <i class="fa fa-question"></i>
+                                                            </div>
                                                         </div>
 
                                                         <div class="form-group">
                                                             <div class="checkbox cbcontainer col-xs-offset-1">
                                                               <label><input type="checkbox" value="">Enable Save To Dropbox:</label>
+                                                            </div>
+                                                            <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Enable this to include the “Save to Dropbox” link on the export menu when creating forms. Over-write the company name populated on your eForms. When blank, your company name will be used.">
+                                                                <i class="fa fa-question"></i>
                                                             </div>
                                                         </div>
 
@@ -499,52 +525,73 @@
                                                     <div class="form-group">
                                                       <label for="inputEmail3" class="col-sm-3 col-md-offset-1 control-label">Company eForm Name:</label>
                                                       <div class="col-sm-4">
-                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="">
+                                                        <input type="email" class="form-control" id="inputEmail3" placeholder="From Name Here">
+                                                      </div>
+                                                      <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Over-write the company name populated on your eForms. When blank, your company name will be used.">
+                                                          <i class="fa fa-question"></i>
                                                       </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <div class="checkbox cbcontainer col-xs-offset-1">
-                                                          <label><input type="checkbox" value="">Company Clauses Editable</label>
+                                                          <label><input type="checkbox" value="">Company Clauses Editable:</label>
+                                                        </div>
+                                                        <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Setting this to enabled prevents any salespeople from editing any of your company created clauses on a form.">
+                                                            <i class="fa fa-question"></i>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <div class="checkbox cbcontainer col-xs-offset-1">
-                                                          <label><input type="checkbox" value="">Require Address</label>
+                                                          <label><input type="checkbox" value="">Require Address:</label>
+                                                        </div>
+                                                        <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="A useful feature to ensure the form being created is a bona-fide address. This requires the address field to be filled in when creating a new form.">
+                                                            <i class="fa fa-question"></i>
                                                         </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <div class="checkbox cbcontainer col-xs-offset-1">
-                                                          <label><input type="checkbox" value="">Disable REINZ Clauses</label>
+                                                          <label><input type="checkbox" value="">Disable REINZ Clauses:</label>
+                                                        </div>
+                                                        <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="Enabling this setting will turn off the use of REINZ clauses on all forms for all your staff.">
+                                                            <i class="fa fa-question"></i>
                                                         </div>
                                                     </div>  
 
                                                     <div class="form-group">
-                                                        <div class="checkbox cbcontainer col-xs-offset-1">
-                                                          <label><input type="checkbox" value="">Appendix Page Title</label>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="form-group">
-                                                      <label for="inputEmail3" class="col-sm-3 col-md-offset-1 control-label">Appendix Page Title</label>
+                                                      <label for="inputEmail3" class="col-sm-3 col-md-offset-1 control-label">Appendix Page Title:</label>
                                                       <div class="col-sm-4">
                                                         <input type="email" class="form-control" id="inputEmail3" placeholder="Default">
                                                       </div>
+                                                      <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content=" Set a custom title for the appendix page (last page) of all forms.">
+                                                          <i class="fa fa-question"></i>
+                                                      </div>
                                                     </div>
 
                                                     <div class="form-group">
                                                         <div class="checkbox cbcontainer col-xs-offset-1">
-                                                          <label><input type="checkbox" value="">Disable Distribution</label>
+                                                          <label><input type="checkbox" value="">Disable Distribution:</label>
+                                                        </div>
+                                                        <div class="help-icon" data-container="body" data-toggle="popover" data-placement="right" data-content="By ticking this box the system will forbid the distribution of a form via email, shared links or saving to remote computers. Local PDF saving is still enabled.">
+                                                            <i class="fa fa-question"></i>
                                                         </div>
                                                     </div>
-                                                                                                        </div>
-                                                        </div>
-                                                      </div>
-                                                    </fieldset>
-                                                 </form>
-                                               </div>
+                                                    
+                                                    </div>
+
+                                                    </div>
+                                                  </div>
+                                                </fieldset>
+                                             </form>
+                                             <div class="row">
+                                                 <div class="col-md-6">
+                                                     <div class="form-button-block">
+                                                         <button type="button" id="saveSettings" class="save-settings btn btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Save Settings"><i class="fa fa-save"></i>SAVE SETTINGS</button>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                           </div>
                                           </div> 
                                     </div>
                                 </div>

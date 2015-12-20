@@ -11,6 +11,9 @@ $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip({ container: 'body' }); // <-- Example code from Bootstrap docs
             }
 
+            //Popover Activation
+            $('[data-toggle="popover"]').popover({ trigger: "hover" });
+
 });
 
 //Object that has method for all function invocations. 

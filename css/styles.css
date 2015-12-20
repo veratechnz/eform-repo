@@ -1503,8 +1503,8 @@ a .fa.fa-close.remove-clause {
   background-color: #8EC6CE;
   padding: 8px;
   border-radius: 2px;
-  font-weight: 500;
-  margin-bottom: 32px; }
+  font-weight: 600;
+  margin-bottom: 45px; }
 
 .cbcontainer {
   display: inline-block; }
@@ -1528,7 +1528,34 @@ div.cbcontainer label {
   padding-left: 0px; }
 
 .form-group {
-  margin-bottom: 25px; }
+  margin-bottom: 38px; }
+
+/*Firefox Dotted Line Fix*/
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000; }
+
+.save-settings {
+  background-color: #0D497C;
+  color: #fff;
+  float: right;
+  margin-top: 10px; }
+
+.save-settings:hover {
+  background-color: #8EC6CE;
+  color: #fff;
+  float: right; }
+
+.save-settings i {
+  padding: 0px 6px 0px 6px;
+  color: #fff; }
+
+.help-icon {
+  float: right;
+  margin-right: 25%;
+  padding: 2px 6px 2px 6px;
+  background-color: #efefef;
+  border-radius: 5px; }
 
 /***************************** Media Queries ****************************************/
 /* Large desktops and laptops */
