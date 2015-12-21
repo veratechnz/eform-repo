@@ -70,6 +70,15 @@ a .fa.fa-close.remove-clause {
 	float: right;
 }
 
-
 /*Menu Weight Fix*/
 .page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {font-weight: 600;}
+
+/*Side Menu Adjustments*/
+#main-left-nav.page-sidebar-menu li a{
+	border-bottom: 1px solid #444444;
+}
+
+.tab-pane.active div.panel.panel-default{
+	border: none;
+}
+

@@ -276,6 +276,7 @@ ol{
 .bs-callout.bs-callout-danger{
     color: #333;
     font-weight: 500;
+    margin-left: 5px;
 }
 
 #slider-contents{
@@ -376,19 +377,19 @@ ol{
 /*Warning-Panel*/
 #tab_1_1_1 .panel.panel-default{
     margin: 30px 0 35px 0;
-    border: solid 1px#000;
     max-width: 54em;
 }
 
 .warning-imp{
-    color: #000;
+    color: #fff;
     font-weight: bold;
     margin-right: 4px;
 }
 .warning-note  i {
-    color: #000;
+    color: #fff;
     margin-right: 4px;
     font-size: 12px !important;
+    background-color: $blue-b;
 }
 
 .strikerThrough{
@@ -415,7 +416,7 @@ ol{
     margin:20px 0 25px 0;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 .doc-border h5 {

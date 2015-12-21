@@ -21,7 +21,6 @@
 .assist-buttons button.btn.red-haze.btn-sm.dropdown-toggle i {
   margin-right: 6px; }
 
-
 /*Forms*/
 .settings-block  div.row {
   margin-bottom: 20px;
@@ -30,9 +29,9 @@
 
   .form-label{
   background-color: $blue-a;
-  padding: 8px;
+  padding: 12px;
   border-radius: 2px;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 45px;
 }
 
@@ -98,3 +97,103 @@ select:-moz-focusring {
   background-color: $grey;
   border-radius: 5px;
 }
+
+/*Button Hover States Clean Up*/
+button.slide-icon-add-trans.btn.btn-default:hover,  
+button.slide-icon-add-trans.btn.btn-default:active, 
+button.slide-icon-assign-contact.btn.btn-default:focus, 
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: $blue-a;
+  border-color: $blue-a;
+  color: #fff;
+}
+
+button.restore-saver.btn.btn-default:hover, 
+button.restore-saver.btn.btn-default:active, 
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: $blue-a;
+  border-color: $blue-a;
+  color: #fff;
+}
+
+button.slide-icon-add-trans.btn.btn-default:hover, 
+button.slide-icon-add-trans.btn.btn-default:active, 
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: $blue-a;
+  border-color: $blue-a;
+  color: #fff;
+}
+
+button.restore-saver.btn.btn-default:hover, 
+button.restore-saver.btn.btn-default:active, 
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus  {
+  background-color: $blue-a;
+  border-color: $blue-a;
+  color: #fff;
+}
+
+button.slide-icon-assign-contact.btn.btn-default:hover, 
+button.slide-icon-assign-contact.btn.btn-default:active, 
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: $blue-a;
+  border-color: $blue-a;
+  color: #fff;
+}
+
+.slide-icon-add-contact.btn.btn-default:hover,
+.slide-icon-add-contact.btn.btn-default:active,
+.slide-icon-add-contact.btn.btn-default:focus,
+.slide-icon-add-contact.btn.btn-default.focus {
+  background-color: $blue-a;
+  border-color: $blue-a;
+  color: #fff; 
+} 
+
+.btn-default:focus, .btn-default.focus{
+ background-color: $blue-a;
+ border-color: $blue-a;
+ color: #fff; 
+}
+
+div#tab-box:hover .fa.fa-sign-out.new-trigger-ani{
+  background-color: $blue-a;
+  border-color: $blue-a;
+}
+
+i#new-trigger-tab.fa.fa-sign-out.new-trigger-ani{
+  cursor: pointer; cursor: hand; 
+  background-color: $blue-b;
+  border-color: $blue-b;
+}
+
+button.btn.red-haze.btn-sm.dropdown-toggle:hover, button.btn.red-haze.btn-sm.dropdown-toggle:active, button.btn.red-haze.btn-sm.dropdown-toggle:focus {
+ background-color: $blue-a;
+ border-color: $blue-a;
+ color: #fff;  
+}
+
+.panel-body.warning-note{
+  background-color: $blue-b;
+  border-radius: 6px;
+  border-color: $blue-b;
+  width: 80%;
+  color: #fff;
+}
+
+p.form-label {
+  background-color: $blue-b;
+  border-radius: 6px;
+  border-color: $blue-b;
+  width: 65%;
+  color: #fff; 
+}
+
+.page-actions div.btn-group button.btn.red-haze.btn-sm.dropdown-toggle:hover {
+  background-color: $blue-a;
+};
+
+

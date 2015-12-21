@@ -254,6 +254,59 @@ $(document).ready(function(){
     }
 
 
+    //Function For Attaching Spinner To Full Page Bootstrap Modal
+    function triggerSpinner() {
+
+        //Object for spinner settings
+        var optsb = {
+            lines: 11 // The number of lines to draw
+            , length: 40 // The length of each line
+            , width: 13 // The line thickness
+            , radius: 25 // The radius of the inner circle
+            , scale: 0.5 // Scales overall size of the spinner
+            , corners: 1 // Corner roundness (0..1)
+            , color: '#0D497C' // #rgb or #rrggbb or array of colors
+            , opacity: 0.25 // Opacity of the lines
+            , rotate: 0 // The rotation offset
+            , direction: 1 // 1: clockwise, -1: counterclockwise
+            , speed: 1 // Rounds per second
+            , trail: 60 // Afterglow percentage
+            , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
+            , zIndex: 2e9 // The z-index (defaults to 2000000000)
+            , className: 'spinner' // The CSS class to assign to the spinner
+            , top: '42%' // Top position relative to parent
+            , left: '50%' // Left position relative to parent
+            , shadow: false // Whether to render a shadow
+            , hwaccel: false // Whether to use hardware acceleration
+            , position: 'absolute' // Element positioning
+        }
+
+        //Full Modal Spinner Get Dom Element and Create Spinner Object
+        var targetB = document.getElementById('modal-loader');
+        var spinnerb = new Spinner(optsb);
+        var spinIt = spinnerb.spin(targetB);
+
+        //Attach spinner to full screen modal
+        $('#modal-loader').modal('show');
+        $('#modal-loader').on('shown.bs.modal', function (e) {
+            spinnerb;
+            $('.modal-content').append(spinIt);
+        })
+
+        return spinnerb;
+    }
+
+    $(document).on('click', function(){
+        triggerSpinner();
+    });
+
+    function killSpin(spinnerb) {
+        var targetB = document.getElementById('modal-loader');
+        spinnerb.stop(targetB);
+        $('#modal-loader').modal('hide');
+    }
+
+
 
 
 

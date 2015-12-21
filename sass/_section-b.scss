@@ -507,7 +507,9 @@ ol div.bs-callout.bs-callout-danger.slide-icon-audit.btn.btn-default {
 }
 
 /*Slide Icons*/
-.slide-icon, .slide-icon-reinz, .slide-icon-indi,   .slide-icon-indi-sv, .slide-icon-company, .slide-icon-audit {float: right; padding: 2px 6px; margin-left: 6px;}
+.slide-icon, .slide-icon-reinz, .slide-icon-indi,   .slide-icon-indi-sv, .slide-icon-company {float: right; padding: 2px 6px; margin-left: 6px;}
+
+.slide-icon-audit {float: none;}
 
 /*Modal Design*/
 #modal-view-clause.modal.fade.in div.modal-dialog div.modal-content {

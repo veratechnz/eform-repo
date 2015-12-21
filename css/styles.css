@@ -230,7 +230,7 @@ body {
   color: #fff; }
 
 .global-search button.btn.btn-default:hover {
-  background-color: #252326; }
+  background-color: #8EC6CE; }
 
 .global-search div.form-group input.form-control {
   height: 28px;
@@ -271,7 +271,7 @@ body {
   margin-right: 5px; }
 
 .short-cuts a.btn.btn-primary:hover {
-  background-color: #252326;
+  background-color: #8EC6CE;
   border: solid 2px #0D497C; }
 
 .short-cuts {
@@ -985,10 +985,13 @@ html.username.username-hide-on-mobile {
   padding-left: 10px; }
 
 /*Slide Icons*/
-.slide-icon, .slide-icon-reinz, .slide-icon-indi, .slide-icon-indi-sv, .slide-icon-company, .slide-icon-audit {
+.slide-icon, .slide-icon-reinz, .slide-icon-indi, .slide-icon-indi-sv, .slide-icon-company {
   float: right;
   padding: 2px 6px;
   margin-left: 6px; }
+
+.slide-icon-audit {
+  float: none; }
 
 /*Modal Design*/
 #modal-view-clause.modal.fade.in div.modal-dialog div.modal-content {
@@ -1219,7 +1222,8 @@ div.admin-panel .bs-callout-danger {
 
 .bs-callout.bs-callout-danger {
   color: #333;
-  font-weight: 500; }
+  font-weight: 500;
+  margin-left: 5px; }
 
 #slider-contents {
   overflow: scroll; }
@@ -1303,18 +1307,18 @@ div.admin-panel .bs-callout-danger {
 /*Warning-Panel*/
 #tab_1_1_1 .panel.panel-default {
   margin: 30px 0 35px 0;
-  border: solid 1px #000;
   max-width: 54em; }
 
 .warning-imp {
-  color: #000;
+  color: #fff;
   font-weight: bold;
   margin-right: 4px; }
 
 .warning-note i {
-  color: #000;
+  color: #fff;
   margin-right: 4px;
-  font-size: 12px !important; }
+  font-size: 12px !important;
+  background-color: #0D497C; }
 
 .strikerThrough {
   text-decoration: line-through; }
@@ -1336,7 +1340,7 @@ div.admin-panel .bs-callout-danger {
   margin: 20px 0 25px 0;
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: normal; }
+  font-weight: 600; }
 
 .doc-border h5 {
   min-height: 4.2em;
@@ -1474,6 +1478,13 @@ a .fa.fa-close.remove-clause {
 .page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
   font-weight: 600; }
 
+/*Side Menu Adjustments*/
+#main-left-nav.page-sidebar-menu li a {
+  border-bottom: 1px solid #444444; }
+
+.tab-pane.active div.panel.panel-default {
+  border: none; }
+
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
   color: #8EC6CE; }
@@ -1501,9 +1512,9 @@ a .fa.fa-close.remove-clause {
 
 .form-label {
   background-color: #8EC6CE;
-  padding: 8px;
+  padding: 12px;
   border-radius: 2px;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 45px; }
 
 .cbcontainer {
@@ -1556,6 +1567,92 @@ select:-moz-focusring {
   padding: 2px 6px 2px 6px;
   background-color: #efefef;
   border-radius: 5px; }
+
+/*Button Hover States Clean Up*/
+button.slide-icon-add-trans.btn.btn-default:hover,
+button.slide-icon-add-trans.btn.btn-default:active,
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+button.restore-saver.btn.btn-default:hover,
+button.restore-saver.btn.btn-default:active,
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+button.slide-icon-add-trans.btn.btn-default:hover,
+button.slide-icon-add-trans.btn.btn-default:active,
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+button.restore-saver.btn.btn-default:hover,
+button.restore-saver.btn.btn-default:active,
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+button.slide-icon-assign-contact.btn.btn-default:hover,
+button.slide-icon-assign-contact.btn.btn-default:active,
+button.slide-icon-assign-contact.btn.btn-default:focus,
+button.slide-icon-assign-contact.btn.btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+.slide-icon-add-contact.btn.btn-default:hover,
+.slide-icon-add-contact.btn.btn-default:active,
+.slide-icon-add-contact.btn.btn-default:focus,
+.slide-icon-add-contact.btn.btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+.btn-default:focus, .btn-default.focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+div#tab-box:hover .fa.fa-sign-out.new-trigger-ani {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE; }
+
+i#new-trigger-tab.fa.fa-sign-out.new-trigger-ani {
+  cursor: pointer;
+  cursor: hand;
+  background-color: #0D497C;
+  border-color: #0D497C; }
+
+button.btn.red-haze.btn-sm.dropdown-toggle:hover, button.btn.red-haze.btn-sm.dropdown-toggle:active, button.btn.red-haze.btn-sm.dropdown-toggle:focus {
+  background-color: #8EC6CE;
+  border-color: #8EC6CE;
+  color: #fff; }
+
+.panel-body.warning-note {
+  background-color: #0D497C;
+  border-radius: 6px;
+  border-color: #0D497C;
+  width: 80%;
+  color: #fff; }
+
+p.form-label {
+  background-color: #0D497C;
+  border-radius: 6px;
+  border-color: #0D497C;
+  width: 65%;
+  color: #fff; }
+
+.page-actions div.btn-group button.btn.red-haze.btn-sm.dropdown-toggle:hover {
+  background-color: #8EC6CE; }
 
 /***************************** Media Queries ****************************************/
 /* Large desktops and laptops */
