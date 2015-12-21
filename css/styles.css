@@ -1485,6 +1485,9 @@ a .fa.fa-close.remove-clause {
 .tab-pane.active div.panel.panel-default {
   border: none; }
 
+nav.navbar.navbar-default.navbar-fixed-top .col-xs-10 {
+  padding-right: 3%; }
+
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
   color: #8EC6CE; }

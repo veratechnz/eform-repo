@@ -261,13 +261,22 @@
                     <br>
                     <br>
                     <br>
-                    <div class="panel-body warning-note">
-                        <span class="warning-imp">IMPORTANT:</span>&nbsp;&nbsp;PLEASE NOTE THAT THIS IS ONLY A REPRESENTATION OF THE FINAL PRINTED FORM.
+                    <div class="notify-instructions">
+                        <ul style="font-size: 30px;">
+                            <li>Click the page to see the js spinner test.</li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
                     </div>
 
-                    <div id="tab-box">
-                            <i id="new-trigger-tab" class="fa fa-sign-out new-trigger-ani"></i>
-                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="modal-loader">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
 
                 </div>
             </div>
@@ -304,20 +313,26 @@
     <script src="assets/admin/pages/scripts/sidebar-ajax.js" type="text/javascript"></script>
     <script src="Scripts/eform/eformSearch.js" type="text/javascript"> </script>
     <script src="js/custom.js" type="text/javascript"> </script>
-
     <script>
         jQuery(document).ready(function () {
+
             Metronic.init(); // init metronic core componets
             Layout.init(); // init layout
             Demo.init(); // init demo features
-            customTrigger.init();
-            $(document).on('click', function(){
-                triggerSpinner();
-            });
-        });
+            varStorage.init();
 
+            // Self Invoking Function Toggle for main spin.js
+            // $(function() {
+            //  $(document).on('click', function(){
+            //     $(document).toggle(function() {
+            //           triggerSpinner();
+            //          }, function() {
+            //           killSpin();
+            //     });
+            //  });
+            // });
 
+        }); //Jquery Function init triggers Ends
     </script>
 </body>
-
 </html>
