@@ -634,6 +634,10 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
   color: #333;
   font-size: 16px; }
 
+#main-left-nav.page-sidebar-menu li a:focus {
+  background-color: blue !important;
+  color: red !important; }
+
 .page-actions {
   margin: 14px 0 15px 10px;
   display: inline; }
@@ -1491,6 +1495,13 @@ a .fa.fa-close.remove-clause {
 .page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
   font-weight: 600; }
 
+#main-left-nav.page-sidebar-menu li a:focus {
+  background-color: blue !important;
+  color: red !important; }
+
+/*#main-left-nav.page-sidebar-menu li a span.title.l-nav-title.modal-test:focus{
+	color: red !important:;
+}*/
 /*Side Menu Adjustments*/
 #main-left-nav.page-sidebar-menu li a {
   border-bottom: 1px solid #444444; }

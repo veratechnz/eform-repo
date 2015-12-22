@@ -138,6 +138,11 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
   font-size: 16px;
 }
 
+#main-left-nav.page-sidebar-menu li a:focus {
+  background-color: blue !important;
+  color: red !important;
+}
+
 .page-actions {
   margin: 14px 0 15px 10px;
   display: inline; }
@@ -166,8 +171,6 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
 ul.page-sidebar-menu li a span.title:focus, ul.page-sidebar-menu li a span.title:active, ul.page-sidebar-menu li a span.title.active{
   color: #fff !important;
 }
-
-
 
 .page-sidebar .page-sidebar-menu > li.open > a {
   background-color: #0E0C0F;
