@@ -211,7 +211,7 @@ p.form-label {
 .toast-item {
     height: auto;
     background: #000;
-      opacity: 0.9;
+    opacity: 0.9;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
@@ -284,12 +284,12 @@ p.form-label {
 
 .toast-type-warning {
     color: white;
-    border-color: #FCBD57;
+    border-color: $blue-a;
 }
 
 .toast-type-error {
     color: white;
-    border-color: #B32B2B;
+    border-color: $blue-a;
 }
 
 /**
@@ -340,3 +340,4 @@ p.form-label {
     margin-top: -40px;
     top: 50%;
 }
+

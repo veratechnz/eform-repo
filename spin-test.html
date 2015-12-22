@@ -264,6 +264,15 @@
                     <button title="New" data-placement="bottom" data-toggle="tooltip" class="slide-icon-add-trans btn btn-default" id="exportTest" type="button">
                         <i class="fa fa-plus"></i>EXPORT
                     </button>
+                    <button title="New" data-placement="bottom" data-toggle="tooltip" class="slide-icon-add-trans btn btn-default" id="warningTest" type="button">
+                        <i class="fa fa-plus"></i>WARNING
+                    </button>
+                    <button title="New" data-placement="bottom" data-toggle="tooltip" class="slide-icon-add-trans btn btn-default" id="printTest" type="button">
+                        <i class="fa fa-plus"></i>PRINT
+                    </button>
+                    <button title="New" data-placement="bottom" data-toggle="tooltip" class="slide-icon-add-trans btn btn-default" id="errorTest" type="button">
+                        <i class="fa fa-plus"></i>ERROR TEST
+                    </button>
                     </div>
                     <br><br>
                     <br>
@@ -358,6 +367,18 @@
 
         $('#exportTest').on('click', function(){
             exportTest();
+        });
+
+        $('#warningTest').on('click', function(){
+            warningTest();
+        });
+
+        $('#printTest').on('click', function(){
+            printTest();
+        });
+
+        $('#errorTest').on('click', function(){
+            errorTest();
         });
 
         }); //Jquery Function init triggers Ends

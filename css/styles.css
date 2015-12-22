@@ -586,6 +586,7 @@ div.page-quick-sidebar-wrapper {
 div.page-logo a h1:hover {
   text-decoration: none; }
 
+/*Sidebar Menu Hovers & States*/
 .page-sidebar-closed-hide-logo div.page-container {
   height: 88vh; }
 
@@ -638,14 +639,22 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
   display: inline; }
 
 .page-sidebar .page-sidebar-menu > li:hover > a {
-  background-color: #000 !important;
+  background-color: #0E0C0F !important;
   color: #ffffff !important; }
 
-.page-sidebar .page-sidebar-menu > li:active > a {
-  background-color: #0E0C0F !important; }
+.page-sidebar .page-sidebar-menu > li > a:focus {
+  background-color: #0E0C0F !important;
+  color: #ffffff !important; }
 
 .page-sidebar-menu li:hover a span.title {
   color: #ffffff !important; }
+
+.page-sidebar-menu li a span.title.l-nav-title:focus, .page-sidebar-menu li a span.title.l-nav-title:active, .page-sidebar-menu li a span.title.l-nav-title.active {
+  color: #fff !important;
+  text-decoration: italic; }
+
+ul.page-sidebar-menu li a span.title:focus, ul.page-sidebar-menu li a span.title:active, ul.page-sidebar-menu li a span.title.active {
+  color: #fff !important; }
 
 .page-sidebar .page-sidebar-menu > li.open > a {
   background-color: #0E0C0F;
@@ -1730,11 +1739,11 @@ p.form-label {
 
 .toast-type-warning {
   color: white;
-  border-color: #FCBD57; }
+  border-color: #8EC6CE; }
 
 .toast-type-error {
   color: white;
-  border-color: #B32B2B; }
+  border-color: #8EC6CE; }
 
 /**
  * positions

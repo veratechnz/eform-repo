@@ -292,54 +292,82 @@ $(document).ready(function(){
 
 
     function killSpin(whatSpinner) {
-
         var targetB = document.getElementById('modal-loader');
         varStorage.spinnerb.stop();
         $('#modal-loader').modal('hide');
-
     }
 
-    //Toaster Invocations
+
+    //Toaster Invocations Found At: https://github.com/akquinet/jquery-toastmessage-plugin/wiki
     function pdfTest(){
-        $(this).toastmessage('showToast', {
+        $(document).toastmessage('showToast', {
             text     : 'PDF Processing',
-            sticky   : true,
             position : 'top-right',
             type     : 'notice',
+            stayTime : 3000,
             close    : function () {console.log("toast is closed ...");}
         });
     }
 
     function saveTest(){
-        $(this).toastmessage('showToast', {
+        $(document).toastmessage('showToast', {
             text     : 'Document Saved',
-            sticky   : true,
             position : 'top-right',
-            type     : 'notice',
+            type     : 'success',
+            stayTime : 3000,
             close    : function () {console.log("toast is closed ...");}
         });
     }
 
     function autosaveTest(){
-        $(this).toastmessage('showToast', {
+        $(document).toastmessage('showToast', {
             text     : 'Autosave Complete',
-            sticky   : true,
             position : 'top-right',
-            type     : 'notice',
+            type     : 'success',
+            stayTime : 3000,
             close    : function () {console.log("toast is closed ...");}
         });
     }
 
     function exportTest(){
-        $(this).toastmessage('showToast', {
+        $(document).toastmessage('showToast', {
             text     : 'File Export Complete',
-            sticky   : true,
             position : 'top-right',
             type     : 'success',
+            stayTime : 3000,
             close    : function () {console.log("toast is closed ...");}
         });
     }
 
+    function warningTest(){
+        $(document).toastmessage('showToast', {
+            text     : 'Server Issue Warning',
+            position : 'top-right',
+            type     : 'warning',
+            stayTime : 3000,
+            close    : function () {console.log("toast is closed ...");}
+        });
+    }
+
+    function printTest(){
+        $(document).toastmessage('showToast', {
+            text     : 'Form Sent To Printer',
+            position : 'top-right',
+            type     : 'notice',
+            stayTime : 3000,
+            close    : function () {console.log("toast is closed ...");}
+        });
+    }
+
+    function errorTest(){
+        $(document).toastmessage('showToast', {
+            text     : 'Error, Please Try Again',
+            position : 'top-right',
+            type     : 'error',
+            stayTime : 3000,
+            close    : function () {console.log("toast is closed ...");}
+        });
+    }
 
 
 
