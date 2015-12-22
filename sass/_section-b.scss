@@ -150,6 +150,11 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
   background-color: #0E0C0F !important;
   color: #ffffff !important; }
 
+.page-sidebar-menu li a > span.title.l-nav-title:hover{
+   color: #fff;
+   background-color: #000;
+}
+
 .page-sidebar-menu li:hover a span.title {
   color: #ffffff !important; }
 
