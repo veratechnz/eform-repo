@@ -71,22 +71,19 @@ a .fa.fa-close.remove-clause {
 }
 
 /*Menu Weight Fix*/
-.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {font-weight: 600;}
-
-#main-left-nav.page-sidebar-menu li a:focus {
-  background-color: blue !important;
-  color: red !important;
-}
 
 /*Side Menu Adjustments*/
 #main-left-nav.page-sidebar-menu li a{
 	border-bottom: 1px solid #444444;
 }
-
 .tab-pane.active div.panel.panel-default{
 	border: none;
 }
-
 nav.navbar.navbar-default.navbar-fixed-top .col-xs-10 {
-padding-right: 3%;
+	padding-right: 3%;
 }
+.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {font-weight: 600;}
+/* Class for jquery menu click triggers*/
+.menu-active{color: #fff !important; background-color: #000 !important;}
+.icon-active{color: $blue-a !important;}
+.span-active{color: #fff !important;}

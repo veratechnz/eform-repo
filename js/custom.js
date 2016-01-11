@@ -20,26 +20,26 @@ $(document).ready(function(){
     var varStorage = {
 
         spinOptsb: {
-              lines: 11 // The number of lines to draw
-            , length: 40 // The length of each line
-            , width: 13 // The line thickness
-            , radius: 25 // The radius of the inner circle
-            , scale: 0.5 // Scales overall size of the spinner
-            , corners: 1 // Corner roundness (0..1)
-            , color: '#0D497C' // #rgb or #rrggbb or array of colors
-            , opacity: 0.25 // Opacity of the lines
-            , rotate: 0 // The rotation offset
-            , direction: 1 // 1: clockwise, -1: counterclockwise
-            , speed: 1 // Rounds per second
-            , trail: 60 // Afterglow percentage
-            , fps: 20 // Frames per second when using setTimeout() as a fallback for CSS
-            , zIndex: 2e9 // The z-index (defaults to 2000000000)
-            , className: 'spinner' // The CSS class to assign to the spinner
-            , top: '42%' // Top position relative to parent
-            , left: '50%' // Left position relative to parent
-            , shadow: false // Whether to render a shadow
-            , hwaccel: false // Whether to use hardware acceleration
-            , position: 'absolute' // Element positioning
+              lines: 11, // The number of lines to draw
+              length: 40, // The length of each line
+              width: 13, // The line thickness
+              radius: 25, // The radius of the inner circle
+              scale: 0.5, // Scales overall size of the spinner
+              corners: 1, // Corner roundness (0..1)
+              color: '#0D497C', // #rgb or #rrggbb or array of colors
+              opacity: 0.25, // Opacity of the lines
+              rotate: 0, // The rotation offset
+              direction: 1, // 1: clockwise, -1: counterclockwise
+              speed: 1, // Rounds per second
+              trail: 60, // Afterglow percentage
+              fps: 20, // Frames per second when using setTimeout() as a fallback for CSS
+              zIndex: 2e9, // The z-index (defaults to 2000000000)
+              className: 'spinner', // The CSS class to assign to the spinner
+              top: '42%', // Top position relative to parent
+              left: '50%', // Left position relative to parent
+              shadow: false, // Whether to render a shadow
+              hwaccel: false, // Whether to use hardware acceleration
+              position: 'absolute' // Element positioning
         },
 
         init: function(){
@@ -51,6 +51,7 @@ $(document).ready(function(){
             backToTopButton();
             submitFormName();
             removeClauseClicked();
+            menuColorChange();
         }
 
     };
@@ -367,6 +368,35 @@ $(document).ready(function(){
             stayTime : 3000,
             close    : function () {console.log("toast is closed ...");}
         });
+    }
+
+//jQuery for changing color of sidebar menu state
+    function menuColorChange(){
+        var clickTest = 0;
+        $('.page-sidebar-menu li a').on('click', function(event){
+            console.log(clickTest);
+
+            if (clickTest == 1) {
+                menuRemoveClass();
+            } else {
+                menuAddClass(event);
+            }
+
+                function menuRemoveClass(){
+                    $('.page-sidebar-menu li a').removeClass('menu-active');
+                    $('.page-sidebar-menu li a.menu-active i').removeClass('icon-active');
+                    $('.page-sidebar-menu li a.menu-active span').removeClass('span-active');
+                    menuAddClass(event);
+                }
+
+                function menuAddClass(event){
+                    clickTest = 1;
+                    $(event.target).addClass('menu-active');
+                    $('.page-sidebar-menu li a.menu-active i').addClass('icon-active');
+                    $('.page-sidebar-menu li a.menu-active span').addClass('span-active');
+                }
+        });
+
     }
 
 

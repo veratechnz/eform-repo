@@ -138,27 +138,9 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
   font-size: 16px;
 }
 
-#main-left-nav.page-sidebar-menu li a:focus {
-  background-color: blue !important;
-  color: red !important;
-}
-
 .page-actions {
   margin: 14px 0 15px 10px;
   display: inline; }
-
-.page-sidebar .page-sidebar-menu > li:hover > a {
-  background-color: #0E0C0F!important;
-  color: #ffffff !important; }
-
-.page-sidebar .page-sidebar-menu > li > a:focus {
-  background-color: #0E0C0F !important;
-  color: #ffffff !important; }
-
-.page-sidebar-menu li a > span.title.l-nav-title:hover{
-   color: #fff;
-   background-color: #000;
-}
 
 .page-sidebar-menu li:hover a span.title {
   color: #ffffff !important; }

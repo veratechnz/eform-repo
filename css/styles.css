@@ -260,9 +260,6 @@ body {
 #main-left-nav.page-sidebar-menu li:hover {
   color: #0D497C; }
 
-#main-left-nav.page-sidebar-menu li i:active {
-  color: #0D497C; }
-
 .short-cuts a.btn.btn-primary, .short-cuts a.btn.btn-primary:active, .short-cuts a.btn.btn-primary:focus {
   background-color: #0e0c0f;
   color: #fff;
@@ -634,25 +631,9 @@ ul.page-sidebar-menu li.start.active a i.icon-home {
   color: #333;
   font-size: 16px; }
 
-#main-left-nav.page-sidebar-menu li a:focus {
-  background-color: blue !important;
-  color: red !important; }
-
 .page-actions {
   margin: 14px 0 15px 10px;
   display: inline; }
-
-.page-sidebar .page-sidebar-menu > li:hover > a {
-  background-color: #0E0C0F !important;
-  color: #ffffff !important; }
-
-.page-sidebar .page-sidebar-menu > li > a:focus {
-  background-color: #0E0C0F !important;
-  color: #ffffff !important; }
-
-.page-sidebar-menu li a > span.title.l-nav-title:hover {
-  color: #fff;
-  background-color: #000; }
 
 .page-sidebar-menu li:hover a span.title {
   color: #ffffff !important; }
@@ -1492,16 +1473,6 @@ a .fa.fa-close.remove-clause {
   float: right; }
 
 /*Menu Weight Fix*/
-.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
-  font-weight: 600; }
-
-#main-left-nav.page-sidebar-menu li a:focus {
-  background-color: blue !important;
-  color: red !important; }
-
-/*#main-left-nav.page-sidebar-menu li a span.title.l-nav-title.modal-test:focus{
-	color: red !important:;
-}*/
 /*Side Menu Adjustments*/
 #main-left-nav.page-sidebar-menu li a {
   border-bottom: 1px solid #444444; }
@@ -1511,6 +1482,20 @@ a .fa.fa-close.remove-clause {
 
 nav.navbar.navbar-default.navbar-fixed-top .col-xs-10 {
   padding-right: 3%; }
+
+.page-sidebar .page-sidebar-menu > li > a > .title, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover .page-sidebar-menu > li > a > .title {
+  font-weight: 600; }
+
+/* Class for jquery menu click triggers*/
+.menu-active {
+  color: #fff !important;
+  background-color: #000 !important; }
+
+.icon-active {
+  color: #8EC6CE !important; }
+
+.span-active {
+  color: #fff !important; }
 
 /*Buttons & Icons*/
 .page-sidebar-menu li:hover i.fa {
