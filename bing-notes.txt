@@ -1,0 +1,61 @@
+The front end repo contains several pages that have updates and changes to the design and user interface.
+
+css/styles.css: 
+I chopped and converted the old css to sass for managability. 
+This 'css/styles.css' has the latest css file that needs to be uploaded to the live solution. 
+
+js/custom.js:
+This is the latest js file that needs to be updated to the latest solution. 
+It has been re-configured to trigger functions from within an object 'varStorage' via a method 'init'. So at the end of each page varStorage.init() should be called. i.e:
+<script src="js/custom.js" type="text/javascript"> </script>
+<script>
+    jQuery(document).ready(function () {
+        Metronic.init(); // init metronic core componets
+        Demo.init(); // init demo features
+        varStorage.init();
+    });
+</script>
+varStorage.init triggers many custom functions. 
+
+template-repo.html:
+This has been used to create a click menu that changes color when clicked. 
+You can test this when clicking 'Settings', 'Support' and 'Templates' in the sidebar menu on this page. 
+
+alerts.html:
+This page contains all of the requested alert methods. It uses a plugin called:<script src="jquery-toastmessage/src/main/javascript/jquery.toastmessage.js"></script>. The click methods are made internally at the bottom of the page in a script tag. All click function can be found on the custom.js page and relate to the toastmessage.js plugin. These alerts are a better alternative than the previous spinner.js tool. 
+
+settings.html:
+This page contains all the settings as per Rueben's wireframe. The question marks/icons use bootstrap popovers. No external custom js is used. All the js content is within the elements. i.e:
+<div data-content="Setting this to enabled prevents any salespeople from editing any of your company created clauses on a form." data-placement="right" data-toggle="popover" data-container="body" class="help-icon" data-original-title="" title=""><i class="fa fa-question"></i></div>
+
+search-results.html:
+The title explains everything for this page. 
+
+login.html:
+Changes color and buttons for new login page. Needs a new backgroung image for the 'body' element. 
+
+home-page.html:
+New home page layout. This will be the landing page for new logins. It is also the Create Form Page. Has new layout and design for recent eForms search on the left side of the page. 
+
+edit-form.html:
+This is the page when the user is editing and typing details into the form. This page has an adjusted layout with Form Name and The Address. It also contains a new search icon (Blue small search icon beside 25 Anderson Street) that allows the user to search for a form. Will demo layout and launch a modal when clicked. 
+
+clauses.html:
+Has a clauses page under the clauses tab. This has a working js function that removes the clauses from the dom when clicked. Also has the new 'add clause' button. 
+
+
+Good luck guys and pls email or call if you have any questions. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
