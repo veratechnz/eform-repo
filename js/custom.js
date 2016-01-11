@@ -253,7 +253,7 @@ $(document).ready(function(){
     function greyOutSave(){
         $('#save-button').tooltip('hide');
         $('i.fa.fa-save').toggleClass('greyed-out').promise().done(function(){
-            $('#save-button').attr('data-original-title', 'Unavailable')
+            $('#save-button').attr('data-original-title', 'Unavailable');
         });
     }
 
@@ -370,34 +370,47 @@ $(document).ready(function(){
         });
     }
 
-//jQuery for changing color of sidebar menu state
+//jQuery for changing color of sidebar menu state. Should be replaced with an url location solution on live application. 
     function menuColorChange(){
         var clickTest = 0;
         $('.page-sidebar-menu li a').on('click', function(event){
-            console.log(clickTest);
 
+            //Click Test To menuRemoveClass or menuAddClass.
             if (clickTest == 1) {
                 menuRemoveClass();
             } else {
                 menuAddClass(event);
             }
 
+            //Remove dynamic css classes from non-clicked menu item. 
                 function menuRemoveClass(){
                     $('.page-sidebar-menu li a').removeClass('menu-active');
-                    $('.page-sidebar-menu li a.menu-active i').removeClass('icon-active');
-                    $('.page-sidebar-menu li a.menu-active span').removeClass('span-active');
+                    $('.page-sidebar-menu li a i').removeClass('icon-active menu-active');
+                    $('.page-sidebar-menu li a span').removeClass('span-active menu-active');
                     menuAddClass(event);
                 }
 
+                //Add
                 function menuAddClass(event){
                     clickTest = 1;
-                    $(event.target).addClass('menu-active');
-                    $('.page-sidebar-menu li a.menu-active i').addClass('icon-active');
-                    $('.page-sidebar-menu li a.menu-active span').addClass('span-active');
+                    var eTarget = event.target;
+                    //Test if icon or text span children are clicked. If so convert to parrent A tag. 
+                    if (eTarget.nodeName == 'SPAN' || eTarget.nodeName == 'I'){
+                    var eSwitch = $(eTarget).parent();
+
+                        $(eSwitch).addClass('menu-active');
+                        $('.page-sidebar-menu li a.menu-active i').addClass('icon-active');
+                        $('.page-sidebar-menu li a.menu-active span').addClass('span-active');
+                    } else {
+                        $(eTarget).addClass('menu-active');
+                        $('.page-sidebar-menu li a.menu-active i').addClass('icon-active');
+                        $('.page-sidebar-menu li a.menu-active span').addClass('span-active');
+                    }
+
                 }
         });
 
-    }
+    } //menuColorChange function
 
 
 

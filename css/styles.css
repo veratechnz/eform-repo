@@ -1839,7 +1839,10 @@ p.form-label {
   .form-sect-title {
     font-size: 18px; }
   .search-form-panel .form-title {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .page-sidebar ul#main-left-nav.page-sidebar-menu li a {
+    border-bottom: none;
+    padding: 20px 3px 15px 9px; } }
 
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1863,7 +1866,10 @@ p.form-label {
   .form-sect-title {
     font-size: 18px; }
   .search-form-panel .form-title {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .page-sidebar ul#main-left-nav.page-sidebar-menu li a {
+    border-bottom: none;
+    padding: 20px 3px 15px 9px; } }
 
 /* Landscape Phones and Portrait Tablets */
 @media (max-width: 767px) {
@@ -1891,7 +1897,10 @@ p.form-label {
   .form-sect-title {
     font-size: 18px; }
   #formName.form-title {
-    font-size: 12px; } }
+    font-size: 12px; }
+  .page-sidebar ul#main-left-nav.page-sidebar-menu li a {
+    border-bottom: none;
+    padding: 20px 3px 15px 9px; } }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
@@ -1913,4 +1922,7 @@ p.form-label {
   .nav-column div.page-sidebar ul#main-left-nav.page-sidebar-menu i {
     font-size: 24px; }
   .form-sect-title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .page-sidebar ul#main-left-nav.page-sidebar-menu li a {
+    border-bottom: none;
+    padding: 20px 3px 15px 9px; } }
